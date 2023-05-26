@@ -1,17 +1,22 @@
-```
 # Traffic Squad Website
 
-This project is a website for the Traffic Squad research team, dedicated to solving traffic problems and improving transportation systems. The website showcases project information, research findings, milestones, and contact details.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+> This project is a website for the Traffic Squad research team, dedicated to solving traffic problems and improving transportation systems. The website showcases project information, research findings, milestones, and contact details.
 
 ## Demo
 
 A live demo of the website is available [here](https://riyajkafar.github.io/Traffic-Squad-Website/).
 
-## Technologies Used
+## Table of Contents
 
-- HTML
-- CSS
-- Bootstrap
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
@@ -20,6 +25,12 @@ A live demo of the website is available [here](https://riyajkafar.github.io/Traf
 - Sections for project scope, milestones, research findings, and contact information
 - Contact form for user inquiries
 - Interactive animations and icons
+
+## Technologies Used
+
+- HTML
+- CSS
+- Bootstrap
 
 ## Getting Started
 
@@ -53,10 +64,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any inquiries or feedback, please contact:
 
-Riyaj K M
-Email: riyajkafar@gmail.com
+Riyaj K M  
+Email: riyajkafar@gmail.com  
 LinkedIn: [Riyaj K M](https://www.linkedin.com/in/riyajkafar)
-
 ```
 
-Please make sure to update the contact details with your own information and modify any other sections as needed.
+Remember to update the contact details with your own information and modify any other sections as needed.
