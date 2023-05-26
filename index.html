@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Squad</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="contact.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo" height="65" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Project Scope
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#literature-survey"
+                  >Literature Survey</a
+                >
+                <a class="dropdown-item" href="#research-gap">Research Gap</a>
+                <a class="dropdown-item" href="#research-problem-solution"
+                  >Research Problem & Solution</a
+                >
+                <a class="dropdown-item" href="#research-objectives"
+                  >Research Objectives</a
+                >
+                <a class="dropdown-item" href="#methodology">Methodology</a>
+                <a class="dropdown-item" href="#technologies">Technologies</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#milestones">Milestones</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Downloads
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#documents">Documents</a>
+                <a class="dropdown-item" href="#presentations">Presentations</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="container d-flex align-items-center">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/image.png" class="img-fluid animated-image" alt="Image" />
+        </div>
+        <div class="col-lg-6">
+          <div class="home-content text-center">
+            <h2 class="home-title">Welcome to Traffic Squad</h2>
+            <p class="home-text">
+              We are a research team dedicated to solving traffic problems and
+              improving transportation systems.
+            </p>
+            <div class="animated-icons">
+              <i class="bi bi-lightbulb bi-4x text-danger animated-icon"></i>
+              <i class="bi bi-check-circle bi-4x text-danger animated-icon"></i>
+              <i class="bi bi-globe bi-4x text-danger animated-icon"></i>
+              <i class="bi bi-people bi-4x text-danger animated-icon"></i>
+            </div>
+            <a href="#contact-us" class="btn btn-primary animated-button"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="literature-survey" class="container align-items-center">
+      <h2>Literature Review</h2>
+      <div class="row">
+        <div class="card mb-4">
+          <div class="card-body">
+            <p class="card-text">
+              Our research focuses on traffic violations and the need to find
+              effective ways of detecting and preventing them. The introduction
+              highlights the seriousness of the problem and notes that traffic
+              offenses have become a significant road safety issue, leading to
+              many accidents and deaths. It paves the way for the importance of
+              research that seeks to address this critical issue by evaluating
+              the effectiveness of a camera system in detecting and preventing
+              traffic violations.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="card-title">
+                Camera-Based Systems for Traffic Violation Detection
+              </h3>
+              <p class="card-text">
+                The proposed study aims to evaluate the effectiveness and
+                accuracy of camera-based systems in detecting traffic violations
+                and improving road safety. The literature review highlights the
+                growing research on using cameras for traffic violation
+                detection. Multiple studies have demonstrated the effectiveness
+                of camera-based systems in reducing road incidents and enhancing
+                road safety.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Speeding Violation Detection</h4>
+              <p class="card-text">
+                A study by Wilson et al. (2019) found that camera-based
+                techniques were particularly effective in reducing the number of
+                speeding violations. Locations with camera-based systems had
+                fewer speeding violations compared to those without. Using
+                cameras to measure speed was more precise than conventional
+                methods like radar guns or pacing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <img src="images/light.png" class="card-img-top" alt="Image" />
+            <div class="card-body">
+              <h4 class="card-title">Red Light Violation Detection</h4>
+              <p class="card-text">
+                Another study evaluated the use of cameras for detecting red
+                light violations. It found that areas with camera-based systems
+                had fewer red light violations compared to those without. Using
+                cameras to detect red light violations was found to be more
+                effective than traditional methods such as having a police
+                officer stationed at the intersection (Khattak et al., 2018).
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Deterrent Effect</h4>
+              <p class="card-text">
+                The literature review also highlights that camera-based systems
+                for detecting traffic violations have a deterrent effect. The
+                threat of being caught and fined for a traffic violation acts as
+                a deterrent for drivers, causing them to be more cautious on the
+                road. This results in a safer driving environment for everyone
+                (Wilson et al., 2019).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research-gap" class="container">
+      <h2>Research Gap</h2>
+      <div class="card-deck">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">
+              Impact of camera-based systems on different types of traffic
+              violations
+            </h4>
+            <p class="card-text">
+              While several studies have evaluated the effectiveness of
+              camera-based systems for detecting speeding and red light
+              violations, there is a lack of research on their effectiveness in
+              detecting other types of violations, such as distracted driving,
+              illegal turns, and seat belt violations. Further research is
+              necessary to comprehend the capabilities of camera-based systems
+              in detecting a wider variety of traffic violations.
+            </p>
+            <p class="card-text">
+              <em
+                >Reference: Xie, X., Yan, X., Yang, J., & Liu, Y. (2020).
+                Real-time detection of traffic violations based on deep
+                learning. IET Intelligent Transport Systems, 14(10),
+                1312-1318.</em
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">
+              Effectiveness of camera-based systems in different road and
+              weather conditions
+            </h4>
+            <p class="card-text">
+              The effectiveness of camera-based systems in different road and
+              weather conditions may vary depending on the road and weather
+              conditions. For example, heavy rain or fog may impair cameras'
+              accuracy in detecting violations. More research is necessary to
+              assess how well camera-based systems function under various road
+              and weather circumstances.
+            </p>
+            <p class="card-text">
+              <em
+                >Reference: Liu, Z., Sun, X., Yang, K., & Zhang, H. (2019). A
+                novel vehicle detection and tracking method for road traffic
+                monitoring under foggy and rainy weather. IEEE Transactions on
+                Intelligent Transportation Systems, 20(5), 1695-1707.</em
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">
+              Acceptability and compliance of drivers with camera-based systems
+            </h4>
+            <p class="card-text">
+              The effectiveness of camera-based systems also depends on drivers'
+              acceptance and compliance levels. Some drivers may perceive these
+              systems as invasive and are less likely to comply with traffic
+              rules. More research is necessary to comprehend the factors that
+              impact drivers' adherence and approval of camera-based systems.
+            </p>
+            <p class="card-text">
+              <em
+                >Reference: Ji, Y., Du, F., Xu, M., & Tian, Y. (2021). Drivers’
+                acceptance of intelligent transport systems in China: A
+                systematic review. Journal of Cleaner Production, 314,
+                127869.</em
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">
+              Cost-effectiveness of camera-based systems
+            </h4>
+            <p class="card-text">
+              Investing in camera-based systems can be costly due to hardware,
+              software, and maintenance expenses. Further research is needed to
+              evaluate the cost-effectiveness of these systems in comparison to
+              traditional methods of traffic violation detection.
+            </p>
+            <p class="card-text">
+              <em
+                >Reference: Lu, X., Chen, W., & Yu, Z. (2018). Cost-benefit
+                analysis of traffic violation detection systems. Journal of
+                Advanced Transportation, 2018, 1-9.</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research-problem-solution" class="container">
+      <h2>Research Problem Solution</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">Research Problem</h2>
+              <p class="card-text">
+                Our research aims to address the identified gap in traffic
+                management by developing a smart traffic violation detection
+                system using OpenCV and Flask.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Challenges</h4>
+              <p class="card-text">
+                Overcoming challenges such as accurate vehicle detection, speed
+                estimation, real-time processing, and handling complex traffic
+                scenarios will be key to the success of the project.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Solution</h4>
+              <p class="card-text">
+                The proposed solution includes real-time video stream analysis,
+                user-friendly web interface using Flask, and rigorous testing
+                and validation to ensure high accuracy in identifying
+                overspeeding violations.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title">Enhancements</h4>
+              <p class="card-text">
+                Exploring enhancements such as license plate recognition,
+                customization to different road conditions and speed limits, and
+                addressing ethical and privacy considerations will further
+                enhance the system's effectiveness.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Goal</h4>
+              <p class="card-text">
+                The goal of this project is to improve road safety by developing
+                a reliable smart traffic violation detection system that enables
+                effective traffic enforcement and scalable monitoring of
+                violations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="methodology" class="container">
+      <h2 class="text-center">Methodology</h2>
+      <div class="action-flow">
+        <div class="step">
+          <div class="circle">1</div>
+          <h4>Literature Review</h4>
+        </div>
+        <div class="step">
+          <div class="circle">2</div>
+          <h4>Data Collection</h4>
+        </div>
+        <div class="step">
+          <div class="circle">3</div>
+          <h4>System Implementation</h4>
+        </div>
+        <div class="step">
+          <div class="circle">4</div>
+          <h4>Algorithm Development</h4>
+        </div>
+        <div class="step">
+          <div class="circle">5</div>
+          <h4>System Evaluation</h4>
+        </div>
+        <div class="step">
+          <div class="circle">6</div>
+          <h4>Analysis &amp; Conclusion</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="container">
+      <h2 class="text-center">Tools & Technologies Used</h2>
+      <div class="row technology-list">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/flask.png" alt="Python Flask" />
+              <h4 class="card-title">Python Flask</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/mysql.png" alt="MySQL" />
+              <h4 class="card-title">MySQL</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/OpenCV.png" alt="OpenCV" />
+              <h4 class="card-title">OpenCV</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/html.jpeg" alt="HTML/CSS/JS" />
+              <h4 class="card-title">HTML/CSS/JS</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/Bootstrap.png" alt="Bootstrap" />
+              <h4 class="card-title">Bootstrap</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/git-github.png" alt="GIT/GITHUB" />
+              <h4 class="card-title">GIT/GITHUB</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/vscode.jpg" alt="VS Code" />
+              <h4 class="card-title">VS Code</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/XAMPP.png" alt="XAMPP" />
+              <h4 class="card-title">XAMPP</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="milestones" class="container">
+      <h2>Milestones</h2>
+      <p>
+        Our project milestones include key deliverables, timelines, and
+        checkpoints to ensure the successful completion of our research project.
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4 class="timeline-title">Research and Planning</h4>
+            <p class="timeline-description">
+              Gather relevant literature, define research objectives, and create
+              a project plan.
+            </p>
+            <span class="timeline-date">Month 1</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4 class="timeline-title">Data Collection and Preparation</h4>
+            <p class="timeline-description">
+              Collect and prepare the necessary data for analysis and model
+              development.
+            </p>
+            <span class="timeline-date">Month 2-3</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4 class="timeline-title">Model Development</h4>
+            <p class="timeline-description">
+              Implement machine learning algorithms and develop the traffic
+              violation detection model.
+            </p>
+            <span class="timeline-date">Month 4-6</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4 class="timeline-title">System Integration and Testing</h4>
+            <p class="timeline-description">
+              Integrate the model into the system, perform extensive testing,
+              and fine-tune the system.
+            </p>
+            <span class="timeline-date">Month 7-8</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4 class="timeline-title">Deployment and Evaluation</h4>
+            <p class="timeline-description">
+              Deploy the system in a real-world setting and evaluate its
+              performance and effectiveness.
+            </p>
+            <span class="timeline-date">Month 9-10</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h4 class="timeline-title">Documentation and Final Report</h4>
+            <p class="timeline-description">
+              Document the research process, findings, and conclusions in a
+              comprehensive final report.
+            </p>
+            <span class="timeline-date">Month 11-12</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="documents" class="container">
+      <h2>Documents</h2>
+      <p>
+        In this section, you will find important project documents, reports, and
+        research papers related to our traffic management research.
+      </p>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Topic Assessment</h5>
+              <a href="#" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Project Charter</h5>
+              <a href="https://drive.google.com/file/d/1HfIgzJMPqud1nSkJUoOlfgKOvFmc4RML/view?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Project Proposal</h5>
+              <a href="https://drive.google.com/file/d/1tNNJko9wMa6oxaaHQAyWhnf2V9aoF0Em/view?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Status Documents I</h5>
+              <a href="https://drive.google.com/file/d/1X-9zt73ywiU72R70kGVzdc7ZEtc66XRQ/view?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Status Documents II</h5>
+              <a href="https://drive.google.com/file/d/1rrl_Llv9FtTB-9BX-zvLBRsImNZHAk8R/view?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Research Paper</h5>
+              <a href="https://drive.google.com/file/d/1DigEMxcGymw6QGksS_6fyxdmLJ5Vil6b/view?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Final Report</h5>
+              <a href="#" class="btn btn-primary">Coming soon</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-file-text"></i>
+              <h5 class="card-title">Poster</h5>
+              <a href="https://drive.google.com/file/d/1ujnFxUqn1_YTf70m-L_SbzZeeaTaf5Lh/view?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="presentations" class="container">
+      <h2>Presentations</h2>
+      <p>
+        We provide informative presentations that highlight our research
+        findings, methodologies, and proposed solutions in the field of traffic
+        management.
+      </p>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-film"></i>
+              <h5 class="card-title">Project Proposal</h5>
+              <a href="https://docs.google.com/presentation/d/1RKYUF-l_6HFimBf7SX4kH917L1dRuD7F6MOH5YO90Q4/edit?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-film"></i>
+              <h5 class="card-title">Progress Presentation I</h5>
+              <a href="https://docs.google.com/presentation/d/16PA0bsIBtmqJXwSfOoIkWHfs_dizNfVkcPmy70l89pE/edit?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-film"></i>
+              <h5 class="card-title">Progress Presentation II</h5>
+              <a href="https://docs.google.com/presentation/d/1WAmRXdmGmrTkQPKd9z6r_duWg_s-wEDaZgTNfn0QiVE/edit?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="bi bi-film"></i>
+              <h5 class="card-title">Final Presentation</h5>
+              <a href="https://docs.google.com/presentation/d/1ihI3NcI2d7Dzp5fdGa7otz0cZsnU3pGwrumLfpIkn_o/edit?usp=sharing" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="container">
+      <h2>About Us</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-image">
+            <img src="images/profile.jpeg" alt="Profile Image" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-content">
+            <h3>Riyaj K M</h3>
+            <p>University: Sri Lanka Institute of Information Technology</p>
+            <p>Position: Undergraduate</p>
+
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+              <a href="#" class="social-link"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-form">
+          <h3>Contact Form</h3>
+          <form id="contactForm" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="bi bi-telephone"></i>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <p>+94 77-393-4001</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="bi bi-envelope"></i>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>riyajkafar@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="bi bi-geo-alt"></i>
+            <div class="info-text">
+              <h4>Address</h4>
+              <p>Colombo, Sri Lanka</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark text-white">
+      <p>&copy; 2023 Traffic Squad. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

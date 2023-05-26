@@ -1,0 +1,540 @@
+/* Color Variables */
+:root {
+  --primary-color: #d32f2f;
+  /* Red */
+  --secondary-color: #212121;
+  /* Dark Gray */
+  --text-color: #333333;
+  /* Dark Gray */
+  --background-color: #f5f1f1;
+  /* Light Gray */
+  --border-color: #ffffff;
+  /* White */
+}
+
+/* Body Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 100px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--secondary-color) !important;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: var(--primary-color) !important;
+}
+
+/* Dropdown Menu Colors */
+.dropdown-menu {
+  background-color: var(--text-color);
+}
+
+.dropdown-item {
+  color: var(--primary-color);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.dropdown-item.active {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Custom CSS for Home section */
+#home {
+  background-color: var(--background-color);
+}
+
+#home .home-title {
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#home .home-text {
+  margin-bottom: 30px;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+#home .btn-primary {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#home .btn-primary:hover {
+  background-color: #b71c1c;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: scaleIn 1s infinite alternate;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Section Styles */
+section {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+
+/* Section Heading Styles */
+section h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Section Paragraph Styles */
+section p {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.contact-form button[type="submit"] {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-card {
+  flex-basis: calc(50% - 30px);
+  max-width: 250px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info-card i {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.info-card h4 {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #343a40;
+  margin-bottom: 0;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom CSS for card layout */
+.row .col-md-3 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Custom CSS for Downloads and Presentations sections */
+#documents,
+#presentations {
+  padding: 50px 0;
+  background-color: var(--background-color);
+}
+
+#documents h2,
+#presentations h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#documents p,
+#presentations p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#documents .row,
+#presentations .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#documents .col-md-3,
+#presentations .col-md-3 {
+  width: 25%;
+  padding: 15px;
+}
+
+#documents .card-body,
+#presentations .card-body {
+  text-align: center;
+}
+
+#documents .card-body i,
+#presentations .card-body i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+#documents .card-title,
+#presentations .card-title {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#documents .btn-primary,
+#presentations .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  margin-top: 10px;
+}
+
+#documents .btn-primary:hover,
+#presentations .btn-primary:hover {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+
+/* Custom CSS for About Us section */
+#about-us {
+  padding: 50px 0;
+  background-color: var(--background-color);
+}
+
+#about-us h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-content h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-content p {
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.about-content .social-links {
+  margin-top: 20px;
+}
+
+.about-content .social-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.about-content .social-link:hover {
+  color: #b71c1c;
+}
+
+.action-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.step {
+  flex: 0 0 33.33%;
+  text-align: center;
+  margin: 10px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 24px;
+  line-height: 70px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+h4 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline {
+  margin-top: 30px;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: #000;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-content {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #f00;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.timeline-item:nth-child(even)::before {
+  background-color: #f00;
+}
+
+.technology-list {
+  margin-top: 30px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0;
+}
