@@ -6,7 +6,7 @@
 
 ## Demo
 
-A live demo of the website is available [here](https://riyajkafar.github.io/Traffic-Squad-Website/).
+A live demo of the website is available [here](http://ts.mrriyaj.com/).
 
 ## Table of Contents
 
